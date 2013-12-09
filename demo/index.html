@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>toolTips的demo</title>
+    <!--以下资源文件只是demo展示用，不需要引用--> 
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tpi/pi/1.1.0/??base/index.css"/>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/tpi/pi/1.1.0/button/index.css"/>
+    <style type="text/css">
+    body{
+    	background: transparent;
+    }
+    .header{
+    	margin: 30px 0px 20px 1%;
+    	width: 90%;
+    }
+    .header h1{
+    	font-size: 2.5em;
+    }
+    .container{
+    	margin:0 auto;
+    	font-size: 14px;
+    	color: #4c4c4c;
+    }
+    .container h3{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    	font-size: 1.5em;
+    	border-bottom: 1px solid #ddd;
+    }
+    .intro{
+    	padding: 10px 20px;
+    	border-radius: 3px;
+    	border: 1px solid #ddd;
+    	background: #efefef;
+    }
+    .intro p{
+    	line-height: 2em;
+    }
+    .arrow, .style-demo{
+    	margin: 30px 0px;
+    }
+    
+    
+    .arrow img{
+    	margin:5px 0px 0px 10px;
+    }
+    .left{
+    	float: left;
+    	margin:0px 100px 10px 0px;
+    	_height: 65px;
+    }
+    
+    .style-demo .pi-toolTips{
+    	position: relative;
+    	top: 0px;
+    	left: 0px;
+    	width: 150px;
+    	visibility: visible;
+    }
+    .style-demo .content{
+    	position: relative;
+    	margin-bottom: 200px;
+    	height: 100px;
+    }
+    </style>
+    <!--以上资源文件只是demo展示用，不需要引用-->
+        
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.0/seed-min.js"></script>    
+    <link rel="stylesheet" href="../build/index-min.css"/>
+        
+</head>
+<body>
+    <div class="header">
+        <h1>toolTips</h1>
+        <p>作者： 兰梦</p>
+    </div>
+    
+    <div class="container">
+        <div class="intro">
+            <p>可创建独立提示框</p>
+            <p>通过鼠标移动或者点击触发提示框显示</p>
+            <p>支持设置触发元素与提示框位置设置</p>
+        </div>
+        
+        <div class="arrow">
+            <h3>触发元素、箭头、浮层</h3>
+            <div class="clearfix">
+	            <div class="left">
+		            <p>元素有12个点，如下图：</p>
+		            <img src="http://img01.taobaocdn.com/tps/i1/T1XgQrXdBXXXbRijwZ-341-146.png"/>
+		        </div>
+		        
+		        <div class="left">
+		            <p>箭头的方向会出现以下几种情况：</p>
+		            <img src="http://gtms01.alicdn.com/tps/i1/T18SDrFhtaXXXJ9TDb-146-93.png" style="padding-top: 30px;"/>
+		        </div>
+	        </div>
+	        
+	        <div class="clearfix">
+	            <div class="left">
+	                <p>元素与浮层的关系：</p>
+	                <img src="http://gtms01.alicdn.com/tps/i1/T1NvHlFhlaXXcZy8zW-513-371.png" height="250px" />
+	            </div>
+	            
+	            <div class="left">
+	                <p> 提示框的箭头有12个方向 <br/> 由触发元素与提示框关系决定：</p>
+	                <img src="http://gtms01.alicdn.com/tps/i1/T1RL2zFa0aXXbg8bPM-157-104.png" style="padding-top: 30px;"/>
+	            </div>
+	        </div>
+            
+        </div>
+        
+        <div class="style-demo">
+            <h3>样式</h3>
+            <div class="clearfix">
+                <div class="left">
+                    <div class="pi-toolTips pi-toolTips-tl">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             top-left 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips pi-toolTips-tc">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             top-center 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips pi-toolTips-tr">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             top-right 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+              </div>
+            <div class="clearfix">
+                <div class="left">
+                    <div class="pi-toolTips pi-toolTips-lt">
+                        <div class="pi-toolTips-arrow  J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             left-top 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips pi-toolTips-rt">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             right-top 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               </div>
+            <div class="clearfix"> 
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-lc">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                             <div class="pi-toolTips-box">
+                             left-center 
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-rc">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                             <div class="pi-toolTips-box">
+                             right-center  
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="clearfix">
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-lb">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             left-bottom  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-rb">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             right-bottom 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            <div class="clearfix"> 
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-bl">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             bottom-left 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-bc">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                            <div class="pi-toolTips-box">
+                             bottom-center
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="left">
+                    <div class="pi-toolTips  pi-toolTips-br">
+                        <div class="pi-toolTips-arrow J_toolTipsArrow">
+                            <span></span>
+                        </div>
+                        <div class="pi-toolTips-bd J_toolTipsBd">
+                             <div class="pi-toolTips-box">
+                             bottom-right 
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        <div class="style-demo">
+            <h3>DEMO</h3>
+            <div class="content">
+                <a href="#" class="J_test" style="position: absolute; left: 0px; top:  0px;" data-attr='我是来自私有属性'>左边界</a>
+                
+                
+                <a href="#" class="J_test" style="position: absolute; right: 0px; top: 0px;">右边界</a>
+                
+                
+                <a href="#" class="J_test" style="position: absolute; left: 0px; bottom: 0px;">左下边界</a>
+                
+                
+                <a href="#" class="J_test" style="position: absolute; right: 0px; bottom: 20px">右下边界</a>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+        
+   
+
+
+
+<script>
+    var S = KISSY;
+    S.Config.debug = true;
+    if (S.Config.debug) {
+        var srcPath = "../";
+        S.config({
+            packages:[
+                {
+                    name:"toolTips",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('toolTips/index', function (S, ToolTips) {
+         var oneTips = new ToolTips({
+            triggerNode: '.J_test',
+            arrow: true,
+            maxWidth: '200px',
+            maxHeight: '200px',
+            fixSize: true,
+            align: ['bl', 'tl'],
+            content: 'ccccc',
+            contentAttr: 'data-attr'
+            //hocking: true
+         });
+         
+         setTimeout(function(){
+             oneTips.set('maxWidth', '100px');
+         }, 500);
+         
+    })
+</script>
+</body>
+</html>
